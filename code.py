@@ -1,8 +1,13 @@
 import random
 def  colirie_case():
 	return ...
-def colorie_tout():
-	return ...
+def colorie_tout(tab_colori,tab_testage_colori):
+	i=0
+	while i<=len(tab_colori):
+		if est_dans_tab(tab_colori[i],tab_testage_colori):
+			tab_colori = colorie_case(tab_colori,i)
+		i=i+1
+	return tab_colori
 def test_tout():
 	return ...
 def lemme_locaz():
