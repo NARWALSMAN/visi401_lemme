@@ -8,7 +8,10 @@ def test_tout():
 def lemme_locaz():
 	return ...
 def init(nb_case_init,nb_coul_init):
-	return [random.randint(0,nb_coul_init)]*nb_case_init
+    tab = [0]*nb_case_init
+    for i in range(0,len(tab)):
+        tab[i] = random.randint(1,nb_coul_init)
+    return tab
 
 def simlation():
 	nb_case = 10
